@@ -22,7 +22,9 @@ function App() {
   }
 
   return (
+    <>
     <div className="App">
+    <h2 className='text-center text-warning p-3'>Verify your Calculation!</h2>
       <input type="text" placeholder='0' id='answer' value={res} />
       <input type="button" value="9" className="buttn" onClick={handleClick} />
       <input type="button" value="8" className="buttn" onClick={handleClick} />
@@ -44,6 +46,7 @@ function App() {
       <input type="button" value="=" className="buttn buttn1" onClick={calculate} />
       <input type="button" value="<" className="buttn buttn1" onClick={backSpace} />
     </div>
+    </>
   );
 }
 
